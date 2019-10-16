@@ -234,7 +234,12 @@ final public class YMCalendarView: UIView, YMCalendarAppearance {
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.allowsMultipleSelection = false
         collectionView.backgroundView = UIView()
-        collectionView.backgroundView?.layer.insertSublayer(gradientLayer, at: 0)
+        if gradientColors == nil{
+            collectionView.backgroundView?.backgroundColor = .clear
+        }
+        else{
+            collectionView.backgroundView?.layer.insertSublayer(gradientLayer, at: 0)
+        }
         collectionView.ym.register(YMMonthDayCollectionCell.self)
         collectionView.ym.register(YMMonthBackgroundView.self)
         collectionView.ym.register(YMMonthWeekView.self)
