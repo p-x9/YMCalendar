@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name               = "YMCalendar"
-  s.version            = "1.2"
+  s.version            = "1.2.1"
   s.summary            = "Monthly event calendar framework in Swift"
   s.homepage           = "https://github.com/matsune/YMCalendar"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
